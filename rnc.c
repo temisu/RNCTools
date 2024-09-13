@@ -436,7 +436,7 @@ static void build_huf (huf_table *h, int16_t *freqs) {
     }
 
     for (i=0; i<32; i++)
-	h->table[i].codelen = 0;
+		h->table[i].codelen = 0;
 
 	// temisu: fix a case where symbol is only once in the huffman table. This is an ugly hack...
 	if (j == 1) {
